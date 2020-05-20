@@ -1,12 +1,11 @@
 def find_min_in_nested_arrays(src)
  sorted_array=[]
  ind=0
-
+min=1000
  while ind<src.length do
    inner_ind=0
-    min=0
    while inner_ind<src[ind].length do
-       if min < src[ind][inner_ind]
+       if min > src[ind][inner_ind]
        min=src[ind][inner_ind]
         end
        inner_ind+=1
